@@ -15,7 +15,11 @@ html, body {
   height: 100%;
   font-family: Helvetica;
 }
-
+li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 ul {
   list-style: none;
 }
