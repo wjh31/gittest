@@ -19,6 +19,10 @@ html, body {
 ul {
   list-style: none;
 }
+li{
+  margin: 0;
+  padding: 0;
+}
 textarea {  overflow: auto;
 -webkit-box-sizing: border-box;
         box-sizing: border-box;
