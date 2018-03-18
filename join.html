@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta http-equiv="expires" content="0">
+  <link rel="stylesheet" href="css/join.css">
+  <title>加盟申请</title>
+  <!--<script>
+    window.onload = function () {
+      var explorer = window.navigator.userAgent.toLowerCase();
+      if (explorer.indexOf("msie") >= 0) {
+        var ver = explorer.match(/msie ([\d.]+)/)[1];
+        if (ver <= 9.0) {
+          window.location.href = 'https://sendcloud.sohu.com/sorry-for-old-ie.html';
+        }
+      }
+    }
+  </script>-->
+  <!-- <script src="./dist/main.js"></script> -->
+  <script src="../js/jquery.js"></script>
+</head>
+<body>
+<div class="showMessage" id="msg">您的申请信息已经成功提交了，请耐心等待！</div>
+<!--弹窗-->
+<div class="modal" id="modal">
+</div>
+<div class="successMsg" id="successMsg">
+  <div class="msgTitle">
+    <div>加盟申请提交成功</div>
+    <div>智驾游平台俱乐部专员很快会和您联系</div>
+    <div>请耐心等待~</div>
+  </div>
+  <div>
+    <a class="sure" href="/">我知道了</a>
+  </div>
+</div>
+<div class="header">
+  <img src="image/adminLogo.png" alt="">
+  <div class="admin">智驾游</div>
+</div>
+<div class="container">
+  <div class="box">
+    <div class="head">填写加盟资料</div>
+    <div class="msg">
+      <form>
+        <div class="item">
+          <div>
+            <span class="title">
+              <!--<span class="info">✱</span>-->
+              <span>负责人姓名：</span>
+            </span>
+            <div class="data">
+              <input type="text" placeholder="您的姓名" id="userName" maxlength="20" required>
+              <span class="warnMsg" id="userNameInfo">请输入您的姓名，如张三</span>
+            </div>
+          </div>
+          <div>
+            <span class="title">
+              <!--<span class="info">✱</span>-->
+              <span>俱乐部名称：</span>
+            </span>
+            <div class="data">
+              <input type="text" placeholder="请输入俱乐部名称" id="clubName" maxlength="50" required>
+              <span class="warnMsg" id="clubNameInfo">请输入您的俱乐部名称</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="userCode">
+            <span class="title">
+               <!--<span class="info">✱</span>-->
+              <span>注册手机号：</span>
+            </span>
+            <div class="data">
+              <input type="text" id="phone" class="code" placeholder="请输入手机号" required>
+              <span class="warnMsg" id="phoneInfo">请输入您的手机号，如13XXX</span>
+              <span class="getCode" id="getCode">获取验证码</span>
+            </div>
+          </div>
+          <div>
+            <span class="title">
+               <!--<span class="info">✱</span>-->
+              <span>所在区域：</span>
+            </span>
+            <div class="data">
+              <select name="" id="province" class="userSelect">
+                <option value="">请选择</option>
+              </select>
+              <select name="" id="city" class="userSelect">
+                <option value="">请选择</option>
+              </select>
+              <span class="warnMsg" id="cityInfo">请选择您所在区域</span>
+            </div>
+          </div>
+        </div>
+        <div class="item" style='justify-content: flex-end;'>
+          <!-- <div class="message">
+             <span class="showMsg">此手机号将成为贵俱乐部管理员账号</span>
+           </div> -->
+          <div>
+            <span class="title">
+               <!--<span class="info">✱</span>-->
+              <span>办公地址：</span>
+            </span>
+            <div class="data">
+              <input type="text" placeholder="请输入办公地址" id="address" required>
+              <span class="warnMsg" id="addressInfo">请输入您的办公地址</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div>
+            <span class="title">
+              <!--<span class="info">✱</span>-->
+              <span>输入验证码：</span>
+            </span>
+            <div class="data">
+              <input type="text" placeholder="请输入验证码" id="code" required>
+              <span class="warnMsg" id="codeInfo">请输入验证码</span>
+            </div>
+          </div>
+          <div>
+            <span class="title">
+              <!--<span class="info">✱</span>-->
+              <span>座机号：</span>
+            </span>
+            <div class="data">
+              <input type="text" placeholder="请输入座机号" id="tell" required>
+              <span class="warnMsg" id="tellInfo">请输入您的座机号</span>
+            </div>
+          </div>
+        </div>
+        <div class="userMsg">
+          <span class="title">加盟说明：</span>
+          <textarea placeholder="加盟说明" class="addMsg" cols="30" rows="10" id="remark"></textarea>
+        </div>
+      </form>
+      <button class="addJoin" id="join">提交申请</button>
+    </div>
+  </div>
+</div>
+<script src="../js/join.js"></script>
+</body>
+</html>

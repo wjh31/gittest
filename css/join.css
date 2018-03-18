@@ -1,0 +1,364 @@
+/*
+    加盟申请的css
+*/
+/*通用样式*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Helvetica;
+}
+
+ul {
+  list-style: none;
+}
+textarea {  overflow: auto;
+-webkit-box-sizing: border-box;
+        box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.showMessage {
+  position: absolute;
+  width: 400px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  left: 50%;
+  top: 20px;
+  margin-left: -200px;
+  color: #ffffff;
+  display: none;
+}
+
+.success {
+  background-color: #4cae4c;
+}
+
+.warning {
+  background-color: #A94442;
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  box-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.header > img {
+  margin-left: 8px;
+}
+
+.admin {
+  font-size: 16px;
+  color: #6ED26F;
+  margin-left: 4px;
+  font-weight: 600;
+}
+
+.container {
+  width: 100%;
+  padding: 20px;
+  height: calc(100vh - 50px);
+  background-color: #EDEFF4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  background-image: url("/image/bg-join.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.head {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #6ED26F;
+}
+
+.msg {
+  padding: 8px;
+  width: 850px;
+  margin: 10px auto;
+  height: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -webkit-moz-box-pack: center;
+  box-pack: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-lines: multiple;
+  box-orient: horizontal;
+  box-lines: multiple;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #6ED26F;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.item {
+  width: 100%;
+  height: 48px;
+  margin: 16px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -webkit--moz-box-pack: center;
+  box-pack: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  line-height: 48px;
+}
+
+.item > div {
+  width: 400px;
+  margin: 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  box-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.userCode {
+  position: relative;
+}
+
+.getCode {
+  position: absolute;
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  color: #A3A3A3;
+  right: 0px;
+  top: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+}
+
+.title {
+  display: inline-block;
+  width: 104px;
+  text-align: right;
+  color: #535354;
+}
+
+.data {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: relative;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: space-between;
+  -webkit--moz-box-pack: space-between;
+  box-pack: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.data > input {
+  padding-left: 8px;
+  width: 100%;
+  height: 32px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid #DCD9D9;
+}
+
+input:focus {
+  border-radius: 6px;
+  border: 1px solid #6ED26F;
+}
+
+.userSelect {
+  width: 45%;
+  height: 32px;
+  margin: 7px 0px;
+  overflow: scroll;
+  float: left;
+  border-color: #DCD9D9;
+  background: #fff;
+}
+.userSelect:first-child {
+  margin-right: 10%;
+}
+
+.userMsg {
+  width: 832px;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 22px;
+}
+
+.message {
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.showMsg {
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+  position: absolute;
+  right: 0;
+  top: -14px;
+  color: red;
+  font-size: 12px;
+  padding-left: 4px;
+}
+
+.userMsg > .title {
+  height: 40px;
+  margin-left: 8px;
+  text-align: right;
+}
+
+.addJoin {
+  width: 160px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #6ED26F;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.info {
+  color: red !important;
+  font-size: 12px;
+}
+
+.warnMsg {
+  display: inline-block;
+  position: absolute;
+  line-height: 14px;
+  height: 14px;
+  left: 0;
+  color: red;
+  display: none;
+  font-size: 12px;
+}
+
+#cityInfo {
+  bottom: -12px;
+}
+
+.userMsg > textarea {
+  width: 704px;
+  height: 120px;
+  padding-top: 4px;
+  padding-left: 8px;
+  resize: none;
+  border-radius: 8px;
+  outline: none;
+  border-color: #DCD9D9;
+}
+
+textarea:focus {
+  border: 1px solid #6ED26F;
+  border-radius: 8px;
+}
+
+/*弹窗*/
+.modal {
+  width: 100%;
+  height: calc(100vh - 50px);
+  position: fixed;
+  top: 50px;
+  left: 0;
+  background: #7D7E7E;
+  z-index: 10;
+  opacity: 0.9;
+  display: none;
+}
+
+.successMsg {
+  width: 480px;
+  height: 340px;
+  background: #ffffff;
+  position: absolute;
+  z-index: 100;
+  top: 20%;
+  left: 50%;
+  margin-left: -240px;
+  border-radius: 8px;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid #6ED26F;
+}
+
+.successMsg div {
+  width: 100%;
+  text-align: center;
+}
+
+.msgTitle > div {
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.sure {
+  display: inline-block;
+  width: 160px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  background: #6ED26F;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+}
